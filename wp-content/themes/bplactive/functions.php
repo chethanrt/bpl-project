@@ -1,4 +1,8 @@
+
 <?php
+
+// Load Resources Vault module
+require_once get_template_directory() . '/inc/resources-vault/init.php';
 
 
 // Enqueue theme styles
