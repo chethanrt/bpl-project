@@ -1,0 +1,151 @@
+/* Header Styles for BPLActive Theme */
+.site-header {
+    background: #1a237e;
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 80px;
+}
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.site-logo img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+.site-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.site-title a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.site-navigation {
+    margin-left: auto;
+    position: relative;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 6px;
+}
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+}
+#site-navigation-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+#site-navigation-menu li {
+    position: relative;
+}
+#site-navigation-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+#site-navigation-menu a:hover,
+#site-navigation-menu .current-menu-item > a {
+    background: #3949ab;
+}
+#site-navigation-menu .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #283593;
+    min-width: 180px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 10;
+    flex-direction: column;
+    padding: 8px 0;
+}
+#site-navigation-menu li.has-submenu:hover > .sub-menu,
+#site-navigation-menu li.has-submenu:focus-within > .sub-menu {
+    display: flex;
+}
+#site-navigation-menu .sub-menu li {
+    width: 100%;
+}
+#site-navigation-menu .sub-menu a {
+    padding: 8px 16px;
+    font-size: 1rem;
+}
+.menu-placeholder {
+    color: #fff;
+    font-style: italic;
+    opacity: 0.7;
+    padding: 8px 12px;
+}
+@media (max-width: 900px) {
+    #site-navigation-menu {
+        gap: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        height: auto;
+        padding: 16px;
+    }
+    .site-branding {
+        margin-bottom: 12px;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    #site-navigation-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background: #1a237e;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        z-index: 100;
+    }
+    #site-navigation-menu.active {
+        display: flex;
+    }
+    #site-navigation-menu li {
+        width: 100%;
+    }
+    #site-navigation-menu .sub-menu {
+        position: static;
+        box-shadow: none;
+        background: #283593;
+    }
+}
