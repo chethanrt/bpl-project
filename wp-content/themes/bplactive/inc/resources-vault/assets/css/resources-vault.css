@@ -1,0 +1,16 @@
+/* Resources Vault Frontend Styles (BEM) */
+.bpl-resource-card { display: flex; flex-direction: row; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 24px; overflow: hidden; }
+.bpl-resource-thumb img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px 0 0 8px; }
+.bpl-resource-info { padding: 16px; flex: 1; }
+.bpl-resource-title { font-size: 1.2rem; margin: 0 0 8px 0; }
+.bpl-resource-excerpt { color: #444; margin-bottom: 12px; }
+.bpl-resource-meta { font-size: 0.95rem; color: #888; margin-bottom: 12px; }
+.bpl-resource-type, .bpl-resource-size { margin-right: 12px; }
+.bpl-resource-download { background: #1a237e; color: #fff; border: none; border-radius: 4px; padding: 8px 20px; cursor: pointer; font-weight: 600; transition: background 0.2s; }
+.bpl-resource-download:hover { background: #3949ab; }
+.bpl-resource-modal { position: fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:9999; }
+.bpl-modal-content { background:#fff; border-radius:8px; padding:32px; max-width:400px; width:100%; position:relative; }
+.bpl-modal-close { position:absolute; top:12px; right:12px; background:none; border:none; font-size:2rem; color:#333; cursor:pointer; }
+.bpl-breadcrumbs { margin-bottom: 18px; font-size: 0.98rem; color: #666; }
+.bpl-breadcrumbs a { color: #1a237e; text-decoration: none; }
+.bpl-breadcrumbs span { color: #3949ab; }
