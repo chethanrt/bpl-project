@@ -1,0 +1,5 @@
+/* Resources Vault Admin Styles (BEM) */
+.bpl-admin-leads-table th, .bpl-admin-leads-table td { padding: 8px 12px; }
+.bpl-admin-leads-table { border-collapse: collapse; width: 100%; background: #fff; }
+.bpl-admin-leads-table th { background: #f5f7fa; font-weight: 600; }
+.bpl-admin-leads-table tr:nth-child(even) { background: #f9f9f9; }
